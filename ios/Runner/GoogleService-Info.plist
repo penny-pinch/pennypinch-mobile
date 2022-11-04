@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>956507832345-ao90u1iau2cqv9mpgm8rrkcskv5v9k2e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.956507832345-ao90u1iau2cqv9mpgm8rrkcskv5v9k2e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCCDIWCLgsKjsqaGBpautkVS-3yUM4RDFg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>956507832345</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.pennypinch.pennypinch</string>
+	<key>PROJECT_ID</key>
+	<string>pennypinch</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pennypinch.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:956507832345:ios:5e647ed9a4f78685cb6a88</string>
+</dict>
+</plist>

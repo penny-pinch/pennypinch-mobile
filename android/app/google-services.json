@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956507832345",
+    "project_id": "pennypinch",
+    "storage_bucket": "pennypinch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956507832345:android:f6b6fe75f43cea9fcb6a88",
+        "android_client_info": {
+          "package_name": "io.pennypinch.pennypinch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956507832345-igu88f5s9solssrbv2alosj877ldn068.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyMh_60wKYHpQtsrtMSOE1h_VagyF-wU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956507832345-igu88f5s9solssrbv2alosj877ldn068.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
