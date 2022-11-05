@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pennypinch/screens/appliances/appliances_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -11,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 1;
   final screens = [
-    const Text("Devices"),
+    AppliancesScreen(),
     const Text("Finances"),
     const Text("Settings"),
   ];
@@ -31,8 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
           iconSize: 30,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.device_hub_rounded),
-              label: 'Devices',
+              icon: Icon(Icons.home),
+              label: 'Appliances',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.currency_exchange),
