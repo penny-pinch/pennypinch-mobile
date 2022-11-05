@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:iconify_flutter/iconify_flutter.dart';
+import 'package:iconify_flutter/icons/game_icons.dart';
+import 'package:iconify_flutter/icons/ic.dart';
+import 'package:iconify_flutter/icons/icon_park_twotone.dart';
+import 'package:iconify_flutter/icons/mdi.dart';
 import 'package:pennypinch/screens/appliances/appliances_screen.dart';
+import 'package:pennypinch/screens/forecast/forecast_screen.dart';
+import 'package:pennypinch/screens/savings/savings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,8 +20,8 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 1;
   final screens = [
     AppliancesScreen(),
-    const Text("Finances"),
-    const Text("Settings"),
+    const SavingsScreen(),
+    ForecastScreen(),
   ];
 
   @override
@@ -32,16 +39,16 @@ class _HomeScreenState extends State<HomeScreen> {
           iconSize: 30,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Iconify(IconParkTwotone.washing_machine_one),
               label: 'Appliances',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.currency_exchange),
-              label: 'Finances',
+              icon: Iconify(Ic.twotone_savings),
+              label: 'Savings',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: 'Settings',
+              icon: Iconify(Mdi.chart_timeline_variant_shimmer),
+              label: 'Forecast',
             )
           ],
         ),

@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:pennypinch/screens/home_screen.dart';
+import 'package:pennypinch/screens/home/home_screen.dart';
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
-    'high_importance_channel', // id
-    'High Importance Notifications', // title
-    description:
-        'This channel is used for important notifications.', // description
+    'high_importance_channel', 'High Importance Notifications',
+    description: 'This channel is used for important notifications.',
     importance: Importance.high,
     playSound: true);
 
@@ -19,8 +17,8 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
   flutterLocalNotificationsPlugin.show(
       0,
-      message.notification?.title ?? "HEY",
-      "How you doin ?",
+      message.notification?.title,
+      message.notification?.title,
       NotificationDetails(
           android: AndroidNotificationDetails(channel.id, channel.name,
               channelDescription: channel.description,
@@ -53,8 +51,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          // Define the default brightness and colors.
+          primaryColor: Colors.lightBlue[800],
+          canvasColor: Color(0xff00082e)),
       home: MyHomePage(),
     );
   }
@@ -130,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: HomeScreen(),
     );
   }
