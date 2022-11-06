@@ -15,7 +15,10 @@ class AppliancesScreen extends StatefulWidget {
 class _AppliancesScreenState extends State<AppliancesScreen> {
   bool showalert = false;
 
-  void showAlert() {
+  Future<void> showAlert(Map<String, dynamic> appliance) async {
+    FirestoreService? firestoreService = FirestoreService();
+    var response = await firestoreService.startAppliance(appliance);
+    print(response.body);
     setState(() {
       showalert = true;
     });

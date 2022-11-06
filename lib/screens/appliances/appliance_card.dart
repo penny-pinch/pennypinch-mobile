@@ -71,7 +71,7 @@ class _ApplianceCardState extends State<ApplianceCard> {
           ),
           GFButton(
             onPressed: () {
-              widget.showAlert();
+              widget.showAlert(widget.appliance);
             },
             icon: const Icon(
               Icons.electric_bolt,

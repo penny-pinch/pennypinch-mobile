@@ -1,16 +1,9 @@
 # pennypinch
 
-A new Flutter project.
+Building good energy saving habits by gamifying the consumption process and saving you some extra change.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you have the Flutter environment set up on your machine, you should simply be able to try it out on any Android device by connecting it and building the binary with - 
+`flutter build apk`
+`flutter install`
+In the very likely case of build errors or if you can't be bothered to do it, just come and find team Penny Pinchers, we're around somewhere. 
